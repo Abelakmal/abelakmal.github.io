@@ -14,13 +14,37 @@ body {
   background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+#languange{
+}
+
+#language ul{
+    position: fixed;
+    margin: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+#language ul li{
+    opacity: 0.5;
+    list-style: none;
+}
+
+#language ul a{
+    text-decoration: none;
+}
+
+#language ul span{
+    border-right: solid;
+    margin: 0px 20px;
+}
+
 #v1 {
   display: grid;
   grid-template-areas:
     'header content'
     'footer footer';
   justify-content: center;
-  /* height: 100vh; */
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -109,23 +133,23 @@ body {
 }
 
 #v1 #content {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
   padding-bottom: 100px;
   width: 517px;
   height: 100vh;
-  /* overflow-y: scroll;
+  overflow-y: scroll;
   overflow-x: hidden;
   scrollbar-width: thin;
-  scrollbar-color: transparent transparent; */
+  scrollbar-color: transparent transparent; 
 }
 
-/* #v1 #content::-webkit-scrollbar {
+#v1 #content::-webkit-scrollbar {
   width: 0.5rem;
 }
 
 #v1 #content::-webkit-scrollbar-thumb {
   background-color: transparent;
-} */
+}
 
 #v1 #content #about {
   padding-top: 100px;
@@ -198,7 +222,7 @@ body {
 }
 
 #v1 #content #skill .back-end {
-  padding-right: 16px;
+  padding-right: 50px;
   padding-left: 8px;
   padding-top: 12px;
   margin-top: 16px;
@@ -294,7 +318,9 @@ body {
 
 
   #v1 {
+    overflow: hidden;
     padding-left: 40px;
+    height: 100%;
     width: 100%;
     display: inline-block;
 
@@ -329,7 +355,7 @@ body {
   }
 
   #v1 #content {
-    overflow: hidden;
+    overflow-y: visible;
     height: 100%;
     max-width: 300px;
   }
