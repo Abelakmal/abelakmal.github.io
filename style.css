@@ -296,6 +296,8 @@ body {
 
 @media screen and (max-width: 600px) {
     #language ul{
+        background-color:white;
+        opacity: 0.6;
         display: flex;
         justify-content: center;
     }
