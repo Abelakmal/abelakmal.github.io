@@ -314,6 +314,7 @@ header .sosmed li a i:hover {
   grid-area: img;
 }
 #project li a p {
+  width: 100%;
   grid-area: isi;
   size: 16px;
   opacity: 0.7;
@@ -321,6 +322,8 @@ header .sosmed li a i:hover {
   margin-top: 16px;
   margin-bottom: 16px;
   line-height: 28px;
+  max-width: max-content;
+  padding-right: 10px;
 }
 
 #project li a h2 {
@@ -479,7 +482,27 @@ footer {
   }
 
   #project {
+    height: max-content;
     max-width: 300px;
+  }
+
+  #project ul li.a {
+    border-bottom: solid;
+    border-image: linear-gradient(to right, red, blue ) 1;
+  }
+
+  #project li a {
+    display: grid;
+    grid-auto-columns: 80px;
+    grid-template-areas: "header header header"
+                         "isi isi isi "
+                         "footer footer footer"
+                         "img img img";
+  }
+
+  #project li a ul{
+    margin-bottom: 12px;
+    font-size: 8px;
   }
 
   footer {
