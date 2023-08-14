@@ -14,10 +14,10 @@ body {
   background: linear-gradient(to right, #000428, #072f52); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#language ul {
-  margin: 20px;
-  display: flex;
-  justify-content: end;
+#language ul{
+    margin: 20px;
+    display: flex;
+    justify-content: end;
 }
 
 #language ul li {
@@ -381,18 +381,19 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  #language ul {
-    display: flex;
-    justify-content: center;
-  }
-  #language ul span {
-    margin: 0px 20px;
-    border-right: solid;
-  }
-  #language ul li {
-    opacity: 0.5;
-    list-style: none;
-  }
+    #language ul{
+        display: flex;
+        justify-content: center;
+    }
+    #language ul span{
+        margin: 0px 20px;
+        border-right: solid;
+    }
+    #language ul li{
+        opacity: 0.5;
+        list-style: none;
+
+    }
 
   #language ul li a {
     text-decoration: none;
