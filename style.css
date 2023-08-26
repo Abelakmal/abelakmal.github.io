@@ -12,6 +12,7 @@ body {
   background: #000428; /*  fallback for old browsers */
   background: -webkit-linear-gradient(to right, #000428, #073155); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #000428, #072f52); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
 #language ul{
@@ -46,6 +47,7 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  
 }
 
 header {
@@ -90,7 +92,8 @@ header .resume:hover {
 }
 
 header nav {
-  width: 50%;
+  display: flex;
+  justify-content: space-between;
 }
 
 header nav ul {
@@ -100,14 +103,24 @@ header nav ul {
 header nav ul li {
   padding: 12px 0;
   width: 50%;
-  opacity: 0.5;
   transition: 0.5s;
 }
+header nav ul li a{
+  opacity: 0.5;
+}
+header nav ul  a.active .line{
+  padding-right: 70px;
+}
 
-header nav ul li:hover {
+header nav ul a.active{
   opacity: 1;
 }
-header nav ul li:hover .line {
+
+
+header nav ul li a:hover {
+  opacity: 1;
+}
+header nav ul li a:hover .line {
   transition: 0.5s;
   padding-right: 70px;
 }
@@ -120,6 +133,11 @@ header nav ul li a .line {
 
 header nav ul li a {
   text-decoration: none;
+}
+
+header nav img{
+  border-radius: 20px;
+  border: solid white;
 }
 
 header .sosmed {
