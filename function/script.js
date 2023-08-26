@@ -21,3 +21,5 @@ for (let i = 0; i < a.length; i++) {
     line[i].style.transition = '0.5s';
   });
 }
+
+console.log("test");
