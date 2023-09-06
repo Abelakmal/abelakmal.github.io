@@ -1,0 +1,116 @@
+/* header style */
+
+header {
+  padding-top: 100px;
+  width: 517px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+header h1 {
+  font-weight: 700;
+  line-height: 48px;
+  font-size: 48px;
+}
+
+header h2 {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+header p {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: solid transparent;
+  border-image: linear-gradient(to right, red, blue) 1;
+}
+
+header .resume {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .resume:hover {
+  border-bottom: solid white 1px;
+}
+
+/* navbar style */
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul {
+  margin-top: 120px;
+}
+
+header nav ul li {
+  padding: 12px 0;
+  /* width: 50%; */
+  transition: 0.5s;
+}
+header nav ul li a {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+header nav ul li a .line {
+    margin-right: 5px;
+  border-top: solid 2px;
+  padding-right: 60px;
+  font-size: 4px;
+}
+
+
+header nav ul a.active .line {
+  padding-right: 100px;
+  transition: 0.5s;
+}
+
+
+header nav ul a.active {
+  opacity: 1;
+}
+
+header nav ul li:hover a {
+  opacity: 1;
+  transition: 0.5s;
+}
+header nav ul li:hover a .line {
+  transition: 0.5s;
+  padding-right: 100px;
+}
+
+/* sosmed style */
+
+header .sosmed {
+  display: flex;
+  margin-top: 100px;
+}
+
+header .sosmed li {
+  list-style: none;
+  margin-left: 10px;
+}
+
+header .sosmed li a {
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+header .sosmed li a i {
+  font-size: 30px;
+  opacity: 0.5;
+}
+
+header .sosmed li a i:hover {
+  transition: 0.2s;
+  opacity: 1;
+}

@@ -1,0 +1,54 @@
+@media screen and (max-width: 950px) and (min-width: 540px) {
+
+    header{
+        width: 100%;
+    }
+ 
+      header nav {
+        display: none;
+    }
+    
+      header .sosmed {
+        margin-top: 20px;
+      }
+
+    #content {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    }
+
+  
+    #content #skill .front-end .level {
+      padding-right: 20px;
+      height: 200px;
+    }
+    #content #skill .front-end ul {
+      margin-top: -80px;
+      flex-wrap: wrap;
+    }
+  
+    #content #skill .front-end ul li {
+      margin-bottom: 12px;
+    }
+  
+    #content #skill .back-end .level {
+      padding-right: 20px;
+      height: 200px;
+    }
+  
+    #content #skill .back-end ul {
+      margin-top: -80px;
+      flex-wrap: wrap;
+    }
+  
+    #content #skill .back-end ul li {
+      margin-bottom: 12px;
+    }
+  
+    #project {
+      height: max-content;
+      width: 100%;
+    }
+
+  }

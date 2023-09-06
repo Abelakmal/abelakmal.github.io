@@ -1,22 +1,32 @@
 const aTag = document.querySelectorAll('nav ul li a');
-const line = document.querySelectorAll('nav ul .line');
+const line = document.querySelectorAll('nav ul li a .line');
 
-for (let i = 0; i < aTag.length; i++) {
-  aTag[i].addEventListener('click', function () {
-    const current = document.getElementsByClassName('active');
-    if (current.length > 0) {
-      current[0].className = current[0].className.replace(' active', '');
-    }
-    this.className += ' active';
-  });
-
-  if (aTag[i].id != 'a1') {
-    aTag[i].addEventListener('click', function () {
-      document.getElementById('a1').classList.remove('active');
+aTag.forEach((x) => {
+  x.addEventListener('mouseover', () => {
+    line.forEach((n) => {
+      n.addEventListener('mouseover', () => {
+        n.style.transition = '0.5s';
+      });
+      console.log(x);
     });
-  }
-
-  aTag[i].addEventListener('mouseout', function () {
-    line[i].style.transition = '0.5s';
   });
-}
+});
+
+const sectionContent = document.querySelectorAll('main section');
+const content = document.getElementById('content');
+const navLinks = document.querySelectorAll('nav a');
+
+content.onscroll = () => {
+  sectionContent.forEach((sec) => {
+    let top = content.scrollTop;
+    let scrollHeight = sec.offsetHeight;
+    let scrollTop = sec.offsetTop - 100;
+    let id = sec.getAttribute('id');
+    if (top >= scrollTop && top <= scrollTop + scrollHeight) {
+      navLinks.forEach((links) => {
+        links.classList.remove('active');
+        document.querySelector(`nav a[href*= ${id}]`).classList.add('active');
+      });
+    }
+  });
+};

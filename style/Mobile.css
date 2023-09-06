@@ -1,0 +1,94 @@
+/* mobile style */
+
+@media screen and (max-width: 530px) {
+  header {
+    max-width: 300px;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  header h2 {
+    font-size: 18px;
+  }
+
+  header p {
+    font-size: 12px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header .sosmed {
+    margin-top: 20px;
+  }
+
+  header .sosmed li a i {
+    font-size: 25px;
+  }
+
+  #content {
+    overflow-y: visible;
+    height: 100%;
+    max-width: 300px;
+  }
+
+  #content #skill .front-end .level {
+    padding-right: 20px;
+    height: 200px;
+  }
+
+  #content #skill .front-end .level div {
+    font-size: 12px;
+  }
+  #content #skill .front-end ul {
+    margin-top: -80px;
+    flex-wrap: wrap;
+  }
+
+  #content #skill .front-end ul li {
+    margin-bottom: 12px;
+    font-size: 12px;
+  }
+
+  #content #skill .back-end .level {
+    padding-right: 20px;
+    height: 200px;
+  }
+
+  #content #skill .back-end .level div {
+    font-size: 12px;
+  }
+
+  #content #skill .back-end ul {
+    margin-top: -80px;
+    flex-wrap: wrap;
+  }
+
+  #content #skill .back-end ul li {
+    margin-bottom: 12px;
+    font-size: 12px;
+  }
+
+  #project {
+    height: max-content;
+    max-width: 300px;
+  }
+
+  #project li a {
+    display: grid;
+    grid-auto-columns: 80px;
+    grid-template-areas:
+      'header header header'
+      'isi isi isi '
+      'footer footer footer'
+      'img img img';
+  }
+
+  #project li a ul {
+    margin-bottom: 12px;
+    font-size: 8px;
+  }
+}

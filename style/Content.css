@@ -1,0 +1,235 @@
+/* content style */
+
+#content {
+  scroll-behavior: smooth;
+  padding-bottom: 100px;
+  width: 517px;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+#content::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+#content::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+#content #about {
+  padding-top: 100px;
+}
+
+#content #about p {
+  size: 20px;
+  opacity: 0.7;
+  text-align: justify;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  line-height: 28px;
+}
+
+#content #skill {
+  padding-top: 100px;
+}
+
+#content #skill .front-end {
+  padding-right: 16px;
+  padding-left: 8px;
+  padding-top: 12px;
+  margin-top: 16px;
+  display: grid;
+  grid-template-areas:
+    'level header header'
+    'level content content';
+}
+#content #skill .front-end .level {
+  padding: 0px 0px 0px 0px;
+  width: 80%;
+  grid-area: level;
+  border-radius: 12px;
+  border-right: solid rgba(255, 255, 255, 0.578);
+}
+
+#content #skill .front-end .level div {
+  opacity: 0.7;
+  padding-bottom: 25px;
+}
+
+#content #skill .front-end .level div:nth-child(1) {
+  opacity: 1;
+  font-size: 20px;
+}
+
+#content #skill .front-end h1 {
+  grid-area: header;
+}
+
+#content #skill .front-end ul {
+  display: flex;
+  list-style: none;
+  grid-area: content;
+  height: 30px;
+}
+
+#content #skill .front-end ul li {
+  background-color: #2dd4bf1a;
+  color: rgb(7, 246, 190);
+  padding: 5px 20px;
+  border-radius: 12px;
+  margin-right: 20px;
+}
+
+#content #skill .front-end:hover {
+  background-color: #2dd4bf1a;
+  border-radius: 12px;
+}
+
+#content #skill .back-end {
+  padding-right: 50px;
+  padding-left: 8px;
+  padding-top: 12px;
+  margin-top: 16px;
+  display: grid;
+  grid-template-areas:
+    'level header header'
+    'level content content';
+}
+#content #skill .back-end .level {
+  padding: 0px 80px 0px 0px;
+  width: 80%;
+  grid-area: level;
+  border-radius: 12px;
+  border-right: solid rgba(255, 255, 255, 0.578);
+}
+
+#content #skill .back-end .level div {
+  opacity: 0.7;
+  padding-bottom: 25px;
+}
+
+#content #skill .back-end .level div:nth-child(1) {
+  opacity: 1;
+  font-size: 20px;
+}
+
+#content #skill .back-end h1 {
+  grid-area: header;
+}
+
+#content #skill .back-end ul {
+  display: flex;
+  list-style: none;
+  grid-area: content;
+  height: 30px;
+}
+
+#content #skill .back-end ul li {
+  background-color: #2dd4bf1a;
+  color: rgb(7, 246, 190);
+  padding: 5px 20px;
+  border-radius: 12px;
+  margin-right: 20px;
+}
+
+#content #skill .back-end:hover {
+  background-color: #2dd4bf1a;
+  border-radius: 10px;
+}
+
+#content #project {
+  padding-top: 100px;
+  height: max-content;
+  width: 100%;
+}
+
+#project ul li {
+  width: 100%;
+  margin-top: 20px;
+  padding: 5px;
+  list-style-type: none;
+  border-bottom: solid;
+  border-image: linear-gradient(to right, red, blue) 1;
+}
+
+
+#project li a {
+  text-decoration: none;
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    'img header header'
+    'img isi isi'
+    'img isi isi'
+    'img footer footer';
+}
+
+#project li a img {
+  grid-area: img;
+}
+#project li a p {
+  width: 100%;
+  grid-area: isi;
+  size: 16px;
+  opacity: 0.7;
+  text-align: justify;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  line-height: 28px;
+  max-width: max-content;
+}
+
+#project li a h2 {
+  grid-area: header;
+  font-size: 18px;
+}
+
+#project li a ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  grid-area: footer;
+}
+
+#project li a ul span {
+  background-color: #2dd4bf1a;
+  color: rgb(7, 246, 190);
+  border-radius: 12px;
+  padding: 5px 15px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+#project div {
+  display: flex;
+  justify-content: center;
+}
+
+#project button {
+  margin-top: 10px;
+  color: white;
+  background-color: #000428;
+  border-radius: 10px;
+  opacity: 0.6;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#project button:hover {
+  opacity: 1;
+}
+
+#project li:hover a h2 {
+  color: rgb(7, 246, 190);
+}
+
+#project li:hover {
+  background-color: #2dd4bf1a;
+}
+
+
+
