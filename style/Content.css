@@ -36,108 +36,60 @@
   padding-top: 100px;
 }
 
-#content #skill .front-end {
-  padding-right: 16px;
-  padding-left: 8px;
-  padding-top: 12px;
-  margin-top: 16px;
-  display: grid;
-  grid-template-areas:
-    'level header header'
-    'level content content';
-}
-#content #skill .front-end .level {
-  padding: 0px 0px 0px 0px;
-  width: 80%;
-  grid-area: level;
-  border-radius: 12px;
-  border-right: solid rgba(255, 255, 255, 0.578);
+#content #skill div{
+  display: block;
 }
 
-#content #skill .front-end .level div {
-  opacity: 0.7;
-  padding-bottom: 25px;
-}
-
-#content #skill .front-end .level div:nth-child(1) {
-  opacity: 1;
-  font-size: 20px;
-}
-
-#content #skill .front-end h1 {
-  grid-area: header;
-}
-
-#content #skill .front-end ul {
+#content #skill .judul{
   display: flex;
-  list-style: none;
-  grid-area: content;
-  height: 30px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: black;
 }
 
-#content #skill .front-end ul li {
-  background-color: #2dd4bf1a;
-  color: rgb(7, 246, 190);
-  padding: 5px 20px;
-  border-radius: 12px;
-  margin-right: 20px;
+#content #skill span.active{
+  border-bottom: solid transparent;
+  border-image: linear-gradient(to right, red, blue) 1;
 }
 
-#content #skill .front-end:hover {
-  background-color: #2dd4bf1a;
-  border-radius: 12px;
-}
-
-#content #skill .back-end {
-  padding-right: 50px;
-  padding-left: 8px;
-  padding-top: 12px;
-  margin-top: 16px;
-  display: grid;
-  grid-template-areas:
-    'level header header'
-    'level content content';
-}
-#content #skill .back-end .level {
-  padding: 0px 80px 0px 0px;
-  width: 80%;
-  grid-area: level;
-  border-radius: 12px;
-  border-right: solid rgba(255, 255, 255, 0.578);
-}
-
-#content #skill .back-end .level div {
-  opacity: 0.7;
-  padding-bottom: 25px;
-}
-
-#content #skill .back-end .level div:nth-child(1) {
-  opacity: 1;
+#content #skill span{
+  font-weight: bold;
   font-size: 20px;
+  margin-right: 15px;
+  font-family:  monospace;
+  text-transform: uppercase;
 }
 
-#content #skill .back-end h1 {
-  grid-area: header;
+#content #skill .front-end-teknologi{
+  margin-top: 12px;
+  font-size: 16px;
 }
 
-#content #skill .back-end ul {
+#content #skill ul{
   display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
-  grid-area: content;
-  height: 30px;
+  padding: 20px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: rgb(10, 17, 44);
 }
 
-#content #skill .back-end ul li {
-  background-color: #2dd4bf1a;
-  color: rgb(7, 246, 190);
-  padding: 5px 20px;
-  border-radius: 12px;
-  margin-right: 20px;
+#content #skill ul li{
+  margin: 20px 0px;
+  color: aquamarine;
+  font-weight: bold;
 }
 
-#content #skill .back-end:hover {
-  background-color: #2dd4bf1a;
-  border-radius: 10px;
+
+#content #skill span:hover{
+  border-bottom: solid transparent;
+  border-image: linear-gradient(to right, rgb(240, 75, 75), rgb(223, 235, 112)) 1;
+  transition: 0.2s;
 }
 
 #content #project {

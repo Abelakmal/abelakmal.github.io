@@ -30,3 +30,42 @@ content.onscroll = () => {
     }
   });
 };
+
+const btn_span = document.querySelectorAll('#skill span');
+const skillContent = document.querySelectorAll('.teknologi ul li');
+let active = null;
+
+btn_span.forEach((s) => {
+  s.addEventListener('click', function () {
+    if (active != null) {
+      active.classList.remove('active');
+    }
+
+    if (btn_span[0].getAttribute('class')) {
+      btn_span[0].classList.remove('active');
+    }
+
+    if (active != this) {
+      this.classList.add('active');
+      active = this;
+    } else {
+      active = null;
+    }
+  });
+});
+
+btn_span[0].addEventListener('click', () => {
+  contentSkill('React Js', 'Next Js', 'Tailwind');
+});
+btn_span[1].addEventListener('click', () => {
+  contentSkill('Express js', 'Node Js', 'Spring Boot');
+});
+btn_span[2].addEventListener('click', () => {
+  contentSkill('Javascript', 'Java', '');
+});
+
+const contentSkill = (satu, dua, tiga) => {
+  skillContent[0].innerHTML = satu;
+  skillContent[1].innerHTML = dua;
+  skillContent[2].innerHTML = tiga;
+};
