@@ -41,8 +41,7 @@ body {
 #v1 {
   display: grid;
   grid-template-areas:
-    'header content'
-    'footer footer';
+    'header content';
   justify-content: center;
   height: 100vh;
   overflow: hidden;
@@ -53,10 +52,9 @@ footer {
   align-items: center;
   border-radius: 12px 12px 0px 0px;
   justify-content: center;
-  margin-top: -30px;
-  margin-left: 0px;
-  background-color: #164b60;
-  grid-area: footer;
+  margin-top: 20px;
+  height: 200px; 
+  background-color: #2d6731;
 }
 
 /* mobile style */
