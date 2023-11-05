@@ -2,6 +2,7 @@
 
 @media screen and (max-width: 530px) {
 
+  
   #v1{
     display: block;
   }
@@ -39,6 +40,9 @@
     overflow-y: visible;
     height: 100%;
     max-width: 100%;
+  }
+
+  #content section{
     padding: 0px 30px;
   }
 
