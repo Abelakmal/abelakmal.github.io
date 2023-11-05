@@ -2,12 +2,13 @@
 
 #content {
   scroll-behavior: smooth;
+  padding: 2px;
   width: 517px;
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
   scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
+  scrollbar-color: green;
 }
 
 #content::-webkit-scrollbar {

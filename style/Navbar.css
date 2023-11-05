@@ -5,6 +5,10 @@ header {
   width: 517px;
   overflow: hidden;
   margin-right: 20px;
+  border: solid 4px rgb(0, 0, 0);
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 header h1 {

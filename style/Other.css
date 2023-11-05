@@ -40,6 +40,11 @@ body {
   margin: 0px 20px;
 }
 
+#language ul button:hover{
+  background-color: black;
+  color: white;
+}
+
 #v1 {
   display: grid;
   grid-template-areas:
